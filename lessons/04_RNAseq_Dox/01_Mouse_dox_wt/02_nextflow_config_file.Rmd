@@ -31,6 +31,7 @@ process {
 # Fiji has a long and short queue the short is reserved for quicker more intensive
 # projects so we are setting the queue to the long queu as it may take 8+ hours to run all this RNAseq!
   queue='long'
+  # changing queue ='short' (2/2/2025)
 
 # Next we set the memory to 16GB this is how much RAM nextflow can use. Remember Nextflow is just a task manager
 # so it doesn't really need that much memory - I should change it to less, but so excited to run the pipeline :)
@@ -41,6 +42,14 @@ process {
 # Forks are how many tasks nextflow can manage at once. If you want things to go faster you can have more forks!
 # But you wouldn't want more forks than samples of RNAseq - we have 15 but fine with moving forward with 10 at a time.
   maxForks=10
+  #also the place where can say nodes = ____
+  #overall code: process {
+executor='slurm'
+queue='short'
+memory='16 GB'
+maxForks=10
+}
+[*~*]$
 }
 ```
 
