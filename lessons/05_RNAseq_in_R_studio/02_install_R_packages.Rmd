@@ -5,7 +5,7 @@ date: "2024-03-17"
 output: html_document
 ---
 
-# Here we are going to install our first packages !
+# Here we are going to install our first packages ! Hello!
 
 There are two repositories filled with all kinds of good "software" for R. Or packages.
 There are lots of powerful packages we will be using.
@@ -13,6 +13,8 @@ There are lots of powerful packages we will be using.
 # CRAN
 The comprehensive R archive network (CRAN) is located here:
 https://cran.r-project.org/
+
+# here's class for today, and taking notes like this. 
 
 Installing packages from here is built into R and doesn't need extra steps.
 You simply run the install.packages() function from the R console.
