@@ -3,6 +3,8 @@ title: "02_installing_R_packages"
 author: "JR"
 date: "2024-03-17"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 # something

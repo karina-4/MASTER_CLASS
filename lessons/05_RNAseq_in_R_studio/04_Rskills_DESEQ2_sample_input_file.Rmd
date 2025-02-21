@@ -100,7 +100,7 @@ View(deseq_samples)
 The dataframe "deseq_samples" will now be used as required input into DESEQ2
 DESEQ2 requires a paramater 'colData'  and we will point this to "deseq_samples"
 
-#HELLO
+#HELLO 
 
 # TIME TO FACTOR columns (IMPORTANT for DESEQ2)
 So we now have all our sample information and just need to learn one more factor:
