@@ -23,7 +23,7 @@ So all we need for DESEQ2 is input counts and colData. We already got our counts
 load("results/count_files.RData", verbose = T)
 
 #IMPORTANT Raw counts file
-counts_matrix <- read.table("/scratch/Shares/rinnclass/MASTER_CLASS/lessons/04_RNAseq_Dox/01_Mouse_dox_wt/good_class_RNAseq/pipeline_output/star_salmon/salmon.merged.gene_counts.tsv", header=TRUE, row.names=1)
+counts_matrix <- read.table("/scratch/Shares/rinnclass/MASTER_CLASS/STUDENTS/kali4487/MASTER_CLASS/lessons/04_RNAseq_Dox/01_Mouse_dox_wt/dox_long/dox_long_output/star_salmon/salmon.merged.gene_counts.tsv", header=TRUE, row.names=1)
 
 # Remove gene name column
 counts_matrix <-counts_matrix %>% 
@@ -100,6 +100,7 @@ View(deseq_samples)
 The dataframe "deseq_samples" will now be used as required input into DESEQ2
 DESEQ2 requires a paramater 'colData'  and we will point this to "deseq_samples"
 
+#HELLO
 
 # TIME TO FACTOR columns (IMPORTANT for DESEQ2)
 So we now have all our sample information and just need to learn one more factor:
