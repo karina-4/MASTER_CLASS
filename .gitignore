@@ -1,5 +1,6 @@
 *00_run_pipeline*
 *.js
+*figures*
 *.css
 *.bam
 *.bai
@@ -39,12 +40,11 @@ work/*
 *.png
 *.err
 *.out
-*figures*
 *cache*
 *.cnt
 *.bam
 *.bai
-*.zip
+*.zipg
 *work*
 *.bedGraph
 *qc*
